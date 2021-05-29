@@ -23,22 +23,22 @@ func main() {
   if firstNumber > 0 && secondNumber > 0 {
 		for addedNumber < secondNumber {
       addedNumber = addedNumber + 1;
-      answer = answer + firstNumber;
+      answer += firstNumber;
     }
 	} else if firstNumber < 0 && secondNumber < 0 {
 		for addedNumber > secondNumber {
-      addedNumber = addedNumber - 1;
-      answer = answer - firstNumber;
+      addedNumber--;
+      answer -= firstNumber;
     }
   } else if firstNumber > 0 && secondNumber < 0 {
     for addedNumber > secondNumber {
-      addedNumber = addedNumber - 1;
-      answer = answer - firstNumber;
+      addedNumber--;
+      answer -= firstNumber;
     }
   } else if firstNumber < 0 && secondNumber > 0 {
     for addedNumber < secondNumber {
-      addedNumber = addedNumber + 1;
-      answer = answer + firstNumber;
+      addedNumber++;
+      answer += firstNumber;
     }
   }
 	
